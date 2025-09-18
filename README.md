@@ -64,8 +64,30 @@ Understand what factors make a used car more or less expensive and provide clear
 
   These steps were crucial in preparing the raw data for building our regression models to predict used car prices.
 
-- **Overall Acceptance Rate:**  
-  Approximately XX% of the coupons were accepted.
+- **Modeling
+The objective of the modeling phase was to build regression models that can predict the price of used cars based on the prepared dataset.
+
+Models Used:
+
+We trained and evaluated two common regression models:
+
+Linear Regression: A basic linear model that predicts the target variable as a linear combination of the input features.
+Lasso Regression: A linear model that incorporates L1 regularization, which helps in feature selection by shrinking the coefficients of less important features towards zero.
+Evaluation:
+
+The models were trained on the training dataset and evaluated on a separate testing dataset using the following metrics:
+
+Mean Absolute Error (MAE): Measures the average magnitude of the errors in a set of predictions, without considering their direction.
+Mean Squared Error (MSE): Measures the average of the squares of the errors—that is, the average squared difference between the estimated values and the actual value.
+Root Mean Squared Error (RMSE): The square root of the MSE, providing an error metric in the same units as the target variable.
+R-squared (R2): Represents the proportion of the variance in the dependent variable that is predictable from the independent variables.
+Cross-validation (with 5 folds) was also performed on the training data to obtain a more robust estimate of the models' performance and assess their generalization ability.
+
+Results Summary:
+
+Based on the evaluation metrics, both Linear Regression and Lasso Regression models provided reasonable performance in predicting car prices. Lasso Regression showed slightly better performance with a higher R-squared score on both the test set and during cross-validation, suggesting it might be slightly better at capturing the variance in car prices and potentially benefiting from the regularization in handling the features.
+
+Further hyperparameter tuning and exploration of other regression models could potentially lead to improved performance.
 
 ## Recommendations
 
