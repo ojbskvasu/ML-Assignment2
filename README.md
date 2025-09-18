@@ -89,7 +89,7 @@ Understand what factors make a used car more or less expensive and provide clear
 
 ## Recommendations
 
-*To be added based on further analysis.*
+*Based on our analysis and the trained models, particularly the Lasso Regression model which can help identify important features, we can formulate recommendations for the used car dealership. To do this effectively, let's examine the coefficients of the Lasso model. The magnitude and sign of these coefficients indicate how much each feature influences the car's price.
 
 ## How to Run
 
